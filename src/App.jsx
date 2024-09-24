@@ -9,6 +9,8 @@ import { Otp } from './Authentication/Otp';
 import { NewPassword } from './Authentication/NewPassword';
 import Passchanged from './Authentication/Passchanged';
 import LanguageSelector from './Home/LanguageSelect';
+import Home from './Home/Home';
+import Doctorlist from './Home/Doctorlist';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
         <Route path="/passchanged" element={<Passchanged />} />
         {/* Home */}
         <Route path="/language" element={<LanguageSelector />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/doctorlist" element={<Doctorlist />} />
       </Routes>
     </Router>
     </div>
