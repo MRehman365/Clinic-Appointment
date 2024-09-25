@@ -20,15 +20,17 @@ export const NewPassword = () => {
         <form className="flex flex-col items-center w-full mt-10">
           <input
             type="text"
+            required
             placeholder="New Password"
             className="mb-4 p-4 border border-border bg-[#f7f8f9] rounded-lg w-full"
           />
           <input
             type="text"
+            required
             placeholder="Confirm Password"
             className="mb-4 p-4 border border-border bg-[#f7f8f9] rounded-lg w-full"
           />
-          <Link className="bg-[#4486ff] text-white p-4 rounded-lg w-full text-center  mt-5">
+          <Link to='/passchanged' className="bg-[#4486ff] text-white p-4 rounded-lg w-full text-center  mt-5">
             Reset Password
           </Link>
         </form>

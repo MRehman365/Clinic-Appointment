@@ -4,6 +4,7 @@ import img2 from '../assets/Annotation 2024-07-25 111648.png'
 import { IoLocationOutline } from "react-icons/io5";
 import { IoIosStar } from "react-icons/io";
 import { FaHeart } from "react-icons/fa";
+import Footer from '../Layout/Footer'
 
 
 const array = [
@@ -15,7 +16,8 @@ const array = [
 ]
 const Home = () => {
   return (
-    <div className='min-h-screen flex flex-col items-start justify-start gap-4 p-5 '>
+    <div>
+    <div  className='min-h-screen w-full flex flex-col items-start justify-start gap-4 p-5 '>
     {array.map((arrays, index) => (
         <div key={index} className='flex flex-col gap-1'>
         <div className='w-full h-[200px] rounded-lg overflow-hidden relative'>
@@ -39,6 +41,8 @@ const Home = () => {
         </div>
     )
     )}
+    </div>
+    <Footer />
       
     </div>
   )

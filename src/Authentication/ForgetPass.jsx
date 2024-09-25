@@ -22,7 +22,7 @@ const ForgetPass = () => {
             placeholder="Enter your Mobile Number"
             className="mb-4 p-4 border border-border bg-[#f7f8f9] rounded-lg w-full"
           />
-          <Link className="bg-[#4486ff] text-white p-4 rounded-lg w-full text-center mt-5">
+          <Link to='/otp' className="bg-[#4486ff] text-white p-4 rounded-lg w-full text-center mt-5">
             Send Code
           </Link>
         </form>

@@ -68,7 +68,7 @@ const LanguageSelector = () => {
           ))}
         </div>
 
-        <Link className="bg-[#4486ff] text-white p-4 rounded-lg text-center mt-5 w-[100%]">
+        <Link to='/mainhome' className="bg-[#4486ff] text-white p-4 rounded-lg text-center mt-5 w-[100%]">
             Select
           </Link>
       </div>

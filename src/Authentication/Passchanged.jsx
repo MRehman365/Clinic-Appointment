@@ -9,8 +9,8 @@ const Passchanged = () => {
 </div>
 <h2 className='text-3xl font-semibold'>Password changed!</h2>
 <p className='text-gray-500 px-10 text-sm'>Your password has been changed successfully</p>
-<Link className="bg-[#4486ff] text-white p-4 rounded-lg w-full text-center mt-5">
-            Send Code
+<Link to='/language' className="bg-[#4486ff] text-white p-4 rounded-lg w-full text-center mt-5">
+            Login
           </Link>
 
     </div>

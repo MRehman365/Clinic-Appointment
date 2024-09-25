@@ -14,7 +14,7 @@ const Register = () => {
     <div className="h-[100vh] p-5 relative">
     <div>
       <div className="text-3xl rounded-lg border h-8 w-8">
-        <MdOutlineKeyboardArrowLeft />
+      <Link to='/'> <MdOutlineKeyboardArrowLeft /></Link>
       </div>
       </div>
       <div className="flex items-center flex-col h-[80%] gap-5 py-10">
@@ -66,7 +66,7 @@ const Register = () => {
           </Link>
         </form>
       </div>
-      <p className="text-sm text-center font-[500] absolute bottom-3 left-1/2 transform -translate-x-1/2 w-full">Don't have an account? <span className="text-[#37C2C1] font-semibold"><Link>Register Here</Link></span></p>
+      <p className="text-sm text-center font-[500] absolute bottom-3 left-1/2 transform -translate-x-1/2 w-full">Already have an account? <span className="text-[#37C2C1] font-semibold"><Link to='/login'>Login here</Link></span></p>
     </div>
   )
 }

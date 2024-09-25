@@ -18,13 +18,13 @@ export const Otp = () => {
 
         <form className="flex flex-col items-center w-full mt-10">
         <div className="flex justify-around mb-6 w-full">
-                <input type="text" className="w-14 h-14 text-2xl text-center border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" maxlength="1" pattern="\d" inputmode="numeric" required aria-label="First digit of OTP" />
-                <input type="text" className="w-14 h-14 text-2xl text-center border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" maxlength="1" pattern="\d" inputmode="numeric" required aria-label="Second digit of OTP" />
-                <input type="text" className="w-14 h-14 text-2xl text-center border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" maxlength="1" pattern="\d" inputmode="numeric" required aria-label="Third digit of OTP" />
-                <input type="text" className="w-14 h-14 text-2xl text-center border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" maxlength="1" pattern="\d" inputmode="numeric" required aria-label="Fourth digit of OTP" />
+                <input type="text" required className="w-14 h-14 text-2xl text-center border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" maxlength="1" pattern="\d" inputmode="numeric" required aria-label="First digit of OTP" />
+                <input type="text" required className="w-14 h-14 text-2xl text-center border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" maxlength="1" pattern="\d" inputmode="numeric" required aria-label="Second digit of OTP" />
+                <input type="text" required className="w-14 h-14 text-2xl text-center border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" maxlength="1" pattern="\d" inputmode="numeric" required aria-label="Third digit of OTP" />
+                <input type="text" required className="w-14 h-14 text-2xl text-center border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" maxlength="1" pattern="\d" inputmode="numeric" required aria-label="Fourth digit of OTP" />
             </div>
-          <Link className="bg-[#4486ff] text-white p-4 rounded-lg w-full text-center mt-5">
-            Send Code
+          <Link to='/newpassword' className="bg-[#4486ff] text-white p-4 rounded-lg w-full text-center mt-5">
+            Verify
           </Link>
         </form>
       </div>

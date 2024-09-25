@@ -14,8 +14,9 @@ const Login = () => {
     <div className="h-[100vh] p-5 relative">
     <div>
       <div className="text-3xl rounded-lg border h-8 w-8">
-        <MdOutlineKeyboardArrowLeft />
+       <Link to='/'> <MdOutlineKeyboardArrowLeft /></Link>
       </div>
+    
       </div>
       <div className="flex items-center flex-col h-[80%] gap-5 py-10">
         <h2 className="text-3xl font-semibold">
@@ -52,7 +53,7 @@ const Login = () => {
           </Link>
         </form>
       </div>
-      <p className="text-sm text-center font-[500]">Don't have an account? <span className="text-[#37C2C1] font-semibold"><Link>Register Here</Link></span></p>
+      <p className="text-sm text-center font-[500]">Don't have an account? <span className="text-[#37C2C1] font-semibold"><Link to='/register'>Register Here</Link></span></p>
     </div>
   );
 };
