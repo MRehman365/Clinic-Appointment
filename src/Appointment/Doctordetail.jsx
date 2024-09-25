@@ -6,11 +6,13 @@ import { FaBrain } from "react-icons/fa6";
 import { IoStar } from "react-icons/io5";
 import { MdPeopleAlt } from "react-icons/md";
 import { Link } from 'react-router-dom';
+import { IoArrowBack, IoSearch, IoOptions } from 'react-icons/io5'
 
 const Doctordetail = () => {
   return (
     <div className='h-[100vh] overflow-hidden flex flex-col justify-between'>
     <div className='h-full doctor-detail relative'>
+    <Link className='absolute top-4 left-4 z-40' to='/doctorlist'><IoArrowBack className="text-white text-xl" /></Link>
         <img src={img1} className='absolute h-full w-full object-cover opacity-70' alt="" />
     </div>
     <div className="max-w-md mx-auto bg-card text-card-foreground p-5 rounded-lg ">

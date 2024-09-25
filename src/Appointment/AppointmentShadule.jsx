@@ -2,11 +2,15 @@ import React from 'react'
 import img1 from '../assets/WhatsApp Image 2024-09-24 at 6.57.25 AM.jpeg'
 import { Link } from 'react-router-dom'
 import Date from './Date'
+import { IoArrowBack, IoSearch, IoOptions } from 'react-icons/io5'
+
+
 const AppointmentShadule = () => {
   return (
     <div className='h-[100vh] overflow-x-hidden flex flex-col justify-between'>
     <div className='h-full doctor-detail relative rounded-lg  flex justify-between items-center bg-black'>
-        <img src={img1} className='absolute h-full w-full object-cover ' alt="" />
+    <Link className='absolute top-4 left-4 z-40' to='/doctordetail'><IoArrowBack className="text-white text-xl" /></Link>
+        <img src={img1} className='absolute h-full w-full object-cover' alt="" />
         <div className="w-[40%] flex justify-center items-center z-10">
           <img
             src={img1}

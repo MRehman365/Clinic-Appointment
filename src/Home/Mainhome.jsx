@@ -25,7 +25,8 @@ const Mainhome = () => {
       
 
   return (
-    <div className='h-[100vh]'>
+    <div className='h-[100vh] flex flex-col justify-between'>
+    <div>
       <header className="flex justify-between items-center p-4">
         <IoMenu className="w-6 h-6 text-gray-500" />
         <h1 className="text-lg font-semibold">Home</h1>
@@ -91,6 +92,7 @@ const Mainhome = () => {
           </div>
         </div>
       </main>
+      </div>
       <Footer />
     </div>
   );
