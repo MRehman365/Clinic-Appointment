@@ -9,9 +9,9 @@ import {
   IoPlayOutline,
   IoPauseOutline,
 } from "react-icons/io5";
-import { IoArrowBack, IoSearch, IoOptions } from 'react-icons/io5'
+import { IoArrowBack, IoSearch, IoOptions } from "react-icons/io5";
 import { HiOutlineDotsVertical } from "react-icons/hi";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 import profile from "../assets/WhatsApp Image 2024-09-24 at 6.05.15 AM.jpeg";
 
@@ -193,11 +193,16 @@ export default function ChatInterface() {
 
   return (
     <div className="max-w-md mx-auto bg-gray-100 h-screen flex flex-col">
-    <div className="flex items-center justify-between mb-2 mt-2 px-4">
-           <Link to='/details'> <IoArrowBack className="text-gray-600 text-xl" /></Link>
-            <h1 className="text-lg font-semibold text-center flex-grow">Messaging</h1>
-            <HiOutlineDotsVertical className="text-gray-600 text-xl" />
-          </div>
+      <div className="flex items-center justify-between mb-2 mt-2 px-4">
+        <Link to="/details">
+          {" "}
+          <IoArrowBack className="text-gray-600 text-xl" />
+        </Link>
+        <h1 className="text-lg font-semibold text-center flex-grow">
+          Messaging
+        </h1>
+        <HiOutlineDotsVertical className="text-gray-600 text-xl" />
+      </div>
       <div className="bg-white p-4 flex items-center justify-between">
         <div className="flex items-center">
           <div className="w-10 h-10 bg-gray-300 rounded-full mr-3">
