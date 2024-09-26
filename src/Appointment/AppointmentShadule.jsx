@@ -31,27 +31,25 @@ const AppointmentShadule = () => {
           <p className="text-[12px] py-2 text-[#ffffff]">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
             corporis, voluptates ex sit consequatur illum et magnam voluptatem
-            modi, impedit quis earum inventore perferendis non similique saepe
-            provident? Incidunt, velit!
+            modi.
           </p>
         </div>
       </div>
-      <div className="h-[20vh]">
+      <div className="bg-white h-[60vh] rounded-xl relative -top-4">
+      <div className="h-auto p-3">
         <Date />
-      </div>
-      <div className="max-w-md mx-auto bg-card text-card-foreground p-5 rounded-lg ">
+        
+      <div className="max-w-md mx-auto bg-card text-card-foreground rounded-lg ">
         <h3 className="text-[16px] font-bold mt-2">Notes</h3>
         <p className="text-[12px] text-justify text-gray-500  border p-2 mb-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
           purus sit amet luctus venenatis, lectus magna fringilla urna,
           porttitor rhoncus dolor purus non enim praesent elementum Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Dicta quae doloribus amet
-          est necessitatibus, velit blanditiis laborum ut dolorem cupiditate
-          rerum id aspernatur architecto dignissimos. Tempora sequi maxime
-          aliquam dignissimos. facilisis leo, vel.
+          dolor lor
         </p>
       </div>
-      <div className="flex w-full p-4">
+      </div>
+      <div className="flex w-full px-4">
         <div className="flex gap-2 w-full">
           <Link
             to="/home"
@@ -61,6 +59,7 @@ const AppointmentShadule = () => {
           </Link>
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -7,14 +7,14 @@ import { Link } from "react-router-dom";
 
 export default function LabProfile() {
   return (
-    <div className="max-w-md mx-auto h-[100vh] flex flex-col justify-between shadow-lg rounded-lg overflow-hidden">
+    <div className="max-w-md mx-auto h-[100vh] flex flex-col justify-between shadow-lg rounded-lg overflow-hidden p-2">
       <div className="p-4">
-        <div className="flex items-center justify-between mb-4 mt-4">
+        <div className="flex items-center justify-between mb-4">
           <Link to="/mainhome">
             {" "}
             <IoArrowBack className="text-gray-600 text-xl" />
           </Link>
-          <h1 className="text-lg font-semibold text-center flex-grow">
+          <h1 className="text-lg font-semibold text-center text-gray-700 flex-grow">
             Doctor Detail
           </h1>
           <FaRegBell className="text-gray-600 text-xl" />
@@ -26,8 +26,8 @@ export default function LabProfile() {
             className="w-20 h-20 rounded-full object-cover"
           />
           <div className="flex-grow text-center">
-            <h2 className="text-xl font-semibold">labs</h2>
-            <p className="text-gray-500">jamu</p>
+            <h2 className="text-xl pt-2 text-gray-700 font-[500]">labs</h2>
+            <p className="text-gray-500 text-sm">jamu</p>
             <div className="flex items-center mt-1">
               {[...Array(5)].map((_, i) => (
                 <FaStar key={i} className="text-yellow-400 w-4 h-4" />
@@ -41,7 +41,7 @@ export default function LabProfile() {
         <div className="flex gap-2 items-center my-4">
           <Link
             to="/chat"
-            className="w-full text-center bg-white border border-blue-600 text-blue-600 py-1 rounded-full font-medium"
+            className="w-full text-center bg-white border border-[#23aafa] text-[#23aafa] py-1 rounded-full font-medium"
           >
             CONTACT LABS
           </Link>
@@ -49,24 +49,24 @@ export default function LabProfile() {
         </div>
 
         <div className="mt-6">
-          <h3 className="font-semibold mb-2">Stats</h3>
+          <h3 className="font-[500] text-gray-700 text-lg mb-2">Stats</h3>
           <div className="space-y-5">
             <div className="flex items-center bg-white rounded-lg p-3">
-              <HiOfficeBuilding className="w-6 h-6 text-gray-400" />
+              <div className="bg-gray-100 p-4 rounded"><HiOfficeBuilding className="w-7 h-7 text-gray-400" /></div>
               <div className="ml-3">
                 <p className="text-sm text-gray-600">Studies At</p>
                 <p className="font-medium">Jamu</p>
               </div>
             </div>
             <div className="flex items-center bg-white rounded-lg p-3">
-              <FaGraduationCap className="w-6 h-6 text-gray-400" />
+            <div className="bg-gray-100 p-4 rounded"><FaGraduationCap className="w-6 h-6 text-gray-400" /></div>
               <div className="ml-3">
                 <p className="text-sm text-gray-600">Practicing At</p>
                 <p className="font-medium">Jamu</p>
               </div>
             </div>
             <div className="flex items-center bg-white rounded-lg p-3">
-              <FaUserMd className="w-6 h-6 text-gray-400" />
+            <div className="bg-gray-100 p-4 rounded"><FaUserMd className="w-6 h-6 text-gray-400" /></div>
               <div className="ml-3">
                 <p className="text-sm text-gray-600">Happy Patients</p>
                 <p className="font-medium">492 patients</p>
@@ -76,12 +76,12 @@ export default function LabProfile() {
         </div>
 
         <div className="mt-6 flex justify-between items-center">
-          <h3 className="font-semibold">Reviews (464)</h3>
-          <button className="text-blue-600 text-sm font-medium">See All</button>
+          <h3 className="font-[500] text-gray-700">Reviews (464)</h3>
+          <button className="text-[#23aafa] text-sm font-medium">See All</button>
         </div>
       </div>
 
-      <button className="w-full bg-blue-500 text-white py-3 font-medium">
+      <button className="w-full bg-blue-500 text-white py-3 text-sm font-medium rounded-full">
         BOOK AN APPOINTMENT
       </button>
     </div>

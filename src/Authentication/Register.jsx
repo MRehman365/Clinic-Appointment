@@ -11,7 +11,7 @@ const Register = () => {
     };
   
   return (
-    <div className="h-[100vh] p-5 relative">
+    <div className="h-[100vh] bg-white p-5 relative">
     <div>
       <div className="text-3xl rounded-lg border h-8 w-8">
       <Link to='/'> <MdOutlineKeyboardArrowLeft /></Link>
@@ -26,23 +26,23 @@ const Register = () => {
           <input
             type="text"
             placeholder="Username"
-            className="mb-4 p-4 border border-border bg-[#f7f8f9] rounded-lg w-full"
+            className="mb-4 p-4 border-[2px] border-gray-200 bg-[#f7f8f9] rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           />
           <input
-            type="number"
-            placeholder="Mobile Number"
-            className="mb-4 p-4 border border-border bg-[#f7f8f9] rounded-lg w-full"
+            type="email"
+            placeholder="Email"
+            className="mb-4 p-4 border-[2px] border-gray-200 bg-[#f7f8f9] rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           />
           <div className="relative w-full mb-4">
             <input
               type={showPassword ? "text" : "password"}
               placeholder="Password"
-              className="p-4 border border-border bg-[#f7f8f9] rounded-lg w-full"
+              className="p-4 border-[2px] border-gray-200 bg-[#f7f8f9] rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
             <button
               type="button"
               onClick={togglePasswordVisibility}
-              className="absolute right-2 top-4 text-muted-foreground text-xl"
+              className="absolute text-gray-400 text-xl right-3 top-1/2 transform -translate-y-1/2 "
             >
               {showPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
             </button>
@@ -51,22 +51,22 @@ const Register = () => {
             <input
               type={showPassword ? "text" : "password"}
               placeholder="Confirm Password"
-              className="p-4 border border-border bg-[#f7f8f9] rounded-lg w-full"
+              className="p-4 border-[2px] border-gray-200 bg-[#f7f8f9] rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:border focus:border-blue-500"
             />
             <button
               type="button"
               onClick={togglePasswordVisibility}
-              className="absolute right-2 top-4 text-muted-foreground text-xl"
+              className="absolute text-gray-400 text-xl right-3 top-1/2 transform -translate-y-1/2 "
             >
               {showPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
             </button>
           </div>
-          <Link className="bg-[#4486ff] text-white p-4 rounded-lg w-full text-center  mt-5">
-            Register
+          <Link className="bg-[#4486ff] text-white p-4 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-center  mt-5">
+           <button> Register</button>
           </Link>
         </form>
       </div>
-      <p className="text-sm text-center font-[500] absolute bottom-3 left-1/2 transform -translate-x-1/2 w-full">Already have an account? <span className="text-[#37C2C1] font-semibold"><Link to='/login'>Login here</Link></span></p>
+      <p className="text-sm text-center font-[400] absolute bottom-3 left-1/2 transform -translate-x-1/2 w-full">Already have an account? <span className="text-[#37C2C1]"><Link to='/login'>Login here</Link></span></p>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../assets/Annotation 2024-07-25 111648.png";
+import img1 from "../assets/WhatsApp Image 2024-09-24 at 6.57.25 AM.jpeg";
 import { IoSearchOutline } from "react-icons/io5";
 import { MdOutlineStar } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -80,7 +80,7 @@ const Doctorlist = () => {
           <input
             type="text"
             placeholder="Enter the doctor name"
-            className="text-sm bg-white text-gray-700 w-full py-3 px-8 mt-2 border-none rounded-md"
+            className="text-sm bg-white text-gray-700 w-full py-3 px-8 mt-2 border-none rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           />
           <span className="text-gray-500 text-lg absolute left-2 top-5">
             <IoSearchOutline />
@@ -107,7 +107,7 @@ const Doctorlist = () => {
           />
         </div>
       </div>
-      <div className="flex justify-between mt-4 px-6 py-2">
+      <div className="flex justify-between mt-4 py-2">
         <h2 className="text-base text-gray-600 font-semibold">
           Popuar Doctors
         </h2>
@@ -118,7 +118,7 @@ const Doctorlist = () => {
           <Link  key={index} to={arrays.link}>
           <div className="flex bg-white p-2">
           
-            <div className=" bg-[#fffcc0] p-4">
+            <div className=" bg-[#fffcc0] rounded-md p-4">
               <img
                 src={img1}
                 className="w-[50px] h-[50px] object-cover rounded-full overflow-hidden"

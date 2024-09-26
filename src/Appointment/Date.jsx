@@ -35,12 +35,12 @@ const DatePicker = () => {
   return (
     <div className="w-full mx-auto overflow-hidden">
       {/* Month Selector */}
-      <div className="p-2 border-b">
+      <div className="p-1 border-b">
         <div className="relative">
           <select
             value={format(currentMonth, "yyyy-MM")}
             onChange={handleMonthChange}
-            className="w-full text-base font-semibold appearance-none bg-transparent p-2  "
+            className="w-full text-base text-gray-400 font-semibold appearance-none bg-transparent p-1 rounded-lg  focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           >
             {Array.from({ length: 12 }, (_, i) => addMonths(new Date(), i - 6)).map((date) => (
               <option key={date.toISOString()} value={format(date, "yyyy-MM")}>
@@ -69,12 +69,12 @@ const DatePicker = () => {
               data-date={day.toISOString()}
               className={`flex-shrink-0 w-16 h-20 mx-1 rounded-lg flex flex-col items-center justify-center
                 ${isSameDay(day, selectedDate) 
-                  ? "bg-blue-500 text-white" 
-                  : "bg-gray-100 text-gray-700"}`}
+                  ? "bg-[#1e78c0] text-white" 
+                  : "bg-gray-100 text-gray-400"}`}
               style={{ minWidth: '64px', minHeight: '80px' }} // Ensure buttons have fixed size
             >
-              <span className="text-2xl font-bold">{format(day, "d")}</span>
-              <span className="text-sm font-medium">{format(day, "EEE")}</span>
+              <span className="text-xl font-semibold">{format(day, "d")}</span>
+              <span className="text-sm font-[400]">{format(day, "EEE")}</span>
             </button>
           ))}
         </div>

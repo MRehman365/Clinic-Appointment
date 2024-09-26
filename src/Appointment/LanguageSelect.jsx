@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import img1 from '../assets/react.svg'
+import img1 from '../assets/WhatsApp Image 2024-09-24 at 6.57.25 AM.jpeg'
 
 const LanguageSelector = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("English");
@@ -16,9 +16,9 @@ const LanguageSelector = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-start justify-start p-8">
-      <div className="bg-white text-center mt-10 w-full flex flex-col">
-        <div className="flex flex-col items-start">
+    <div className="min-h-screen bg-white flex items-start justify-start p-6">
+      <div className=" text-center mt-10 w-full flex flex-col">
+        <div className="flex flex-col items-start px-3">
           <img
             src={img1}
             alt="user-avatar"

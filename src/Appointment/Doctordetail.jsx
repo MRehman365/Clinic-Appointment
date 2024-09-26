@@ -23,30 +23,30 @@ const Doctordetail = () => {
       </div>
       <div className="max-w-md mx-auto bg-card text-card-foreground p-5 rounded-lg ">
         <h2 className="text-lg font-bold">Dr. M NEHAL AHMAD</h2>
-        <p className="text-sm font-semibold text-[blue]">Dermatologists</p>
+        <p className="text-sm font-[500] text-[#1e78c0]">Dermatologists</p>
         <div className="flex justify-around space-x-4">
           <div className="flex items-center bg-gray-100 p-2 rounded-sm">
             <FaBrain className="text-lg text-[#ff11ae]" />
 
             <span className="ml-2 text-[11px]">
-              Experiences:
+              Experiences
               <br />{" "}
-              <span className="text-[#2f24ff] font-semibold"> 2 Years</span>
+              <span className="text-[#1e78c0] font-semibold"> 2 Years</span>
             </span>
           </div>
-          <div className="flex items-center bg-gray-100 p-2 rounded-sm">
+          <div className="flex items-center bg-gray-100 px-4 py-2rounded-sm">
             <IoStar className="text-lg text-[#ffa42d]" />
             <span className="ml-2 text-[11px]">
-              Rating:
+              Rating
               <br />{" "}
-              <span className="text-[#2f24ff] font-semibold"> 4.8/5.0</span>
+              <span className="text-[#1e78c0] font-semibold"> 4.8/5.0</span>
             </span>
           </div>
           <div className="flex items-center bg-gray-100 p-2 rounded-sm">
             <MdPeopleAlt className="text-lg text-[#5111ff]" />
             <span className="ml-2 text-[11px]">
-              Patients:
-              <br /> <span className="text-[#2f24ff] font-semibold"> 75+ </span>
+              Patients
+              <br /> <span className="text-[#1e78c0] font-semibold"> 75+ </span>
             </span>
           </div>
         </div>
